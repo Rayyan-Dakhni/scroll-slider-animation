@@ -508,6 +508,7 @@ h6 {
 }
 .cs-right {
   flex: 1;
+  display: none;
 }
 .cs-right img {
   transition: all;
@@ -518,6 +519,15 @@ h6 {
 .cs-right div {
   position: sticky;
   top: 5%;
+}
+
+.cs-left div {
+  height: auto;
+  margin: 40px 0px;
+}
+.cs-left img {
+  border: 1px solid;
+  border-radius: 0.3rem;
 }
 
 @media all and (max-width: 767px) {
@@ -575,5 +585,20 @@ h6 {
     flex-direction: column;
     text-align: center;
     padding: 20px 0px;
+  }
+}
+
+@media (min-width: 420px) {
+  .cs-right {
+    display: block;
+  }
+  .cs-left div {
+    height: 100vh;
+  }
+  .cs-left img {
+    display: none;
+  }
+  .cs-left br {
+    display: none;
   }
 }
